@@ -17,6 +17,7 @@ const Header = () => {
                     </Nav>
                     <Nav>
                         <Nav.Link href="/login">Login</Nav.Link>
+                        <Nav.Link href="/logout">Log Out</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
