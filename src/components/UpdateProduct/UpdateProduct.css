@@ -1,0 +1,10 @@
+.update-pd{
+    max-width: 550px;
+    margin: auto;
+    margin-top: 50px;
+}
+.inp-field{
+    width: 150px;
+    height: 37px;
+    margin-right: 5px;
+}

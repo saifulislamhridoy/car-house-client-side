@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import Spinner from '../Spinner/Spinner';
 import './Login.css'
 
 const Login = () => {
@@ -20,6 +21,9 @@ const Login = () => {
         error,
       ] = useSignInWithEmailAndPassword(auth);
       const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(auth);
+      if(loading){
+        return <Spinner></Spinner>
+    }
       if(user){
         navigate(from,{replace:true})
         }

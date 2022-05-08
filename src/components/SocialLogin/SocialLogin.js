@@ -3,17 +3,19 @@ import './SocialLogin.css'
 import google from '../../social/google.png'
 import auth from '../../firebase.init';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const SocialLogin = () => {
     const navigate = useNavigate()
+    const location=useLocation()
+    const from = location.state?.from?.pathname || "/" 
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const handleGoogleLogin = ()=>{
         signInWithGoogle()
     }
     if(user){
-     navigate('/home')
-    }
+        navigate(from,{replace:true})
+        }
     return (
         <div>
             <div className='d-flex mt-4 align-items-center'>

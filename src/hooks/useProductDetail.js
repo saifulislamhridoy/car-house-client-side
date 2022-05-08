@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 
-const useServiceDetail = () =>{
+const useProductDetail = () =>{
     const {productId}=useParams()
     const [product,setProduct]=useState({})
     useEffect(()=>{
@@ -11,4 +11,4 @@ const useServiceDetail = () =>{
     },[])
     return [product]
 }
-export default useServiceDetail;
+export default useProductDetail;

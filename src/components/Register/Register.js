@@ -6,6 +6,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast } from 'react-toastify';
+import Spinner from '../Spinner/Spinner';
 
 const Register = () => {
     const navigate = useNavigate()
@@ -21,6 +22,9 @@ const Register = () => {
         error,
       ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
       const [updateProfile, updating, error1] = useUpdateProfile(auth);
+      if(loading){
+          return <Spinner></Spinner>
+      }
       if(user){
         navigate(from,{replace:true})
         }

@@ -6,7 +6,7 @@ const ProductCart = ({product}) => {
     const {_id,img,itemName,price,quantity,description,supplierName}=product
     return (
         <div className='g-5 col-sm-12 col-md-6 col-lg-4'>
-        <div className="card" >
+        <div className="card bg-body rounded shadow" >
             <img src={img} className="card-img-top" height="250px" alt="..." />
             <div className="card-body">
                 <h3 className="card-title">{itemName}</h3>
