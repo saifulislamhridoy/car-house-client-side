@@ -39,7 +39,8 @@ const Register = () => {
     //    navigate(from,{replace:true})
     }
     return (
-        <div className='w-100 mt-5'>
+        <div className='viwe-port'>
+            <div className='w-100 mt-5'>
             <Form onSubmit={handleSubmit} className='form-container'>
                 <h2 className='text-center bg-dark text-white py-2'>Please Register</h2>
                 <Form.Group className="mb-3" controlId="formBasicText">
@@ -65,6 +66,7 @@ const Register = () => {
                     Register
                 </Button>
             </Form>
+        </div>
         </div>
     );
 };

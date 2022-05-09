@@ -11,7 +11,7 @@ const ManageItems = () => {
         return <Spinner></Spinner>
     }
     return (
-        <div className='container'>
+        <div className='container viwe-port'>
             <button onClick={()=>navigate('/additem')} className='btn bg-primary text-white d-block mx-auto my-4'>Add New Item</button>
             <table className="table table-striped table-hover border">
                 <thead>

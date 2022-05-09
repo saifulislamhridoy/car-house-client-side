@@ -44,7 +44,8 @@ const Login = () => {
         }
     }
     return (
-        <div className='w-100 mt-5'>
+       <div className='viwe-port'>
+            <div className='w-100 mt-5'>
            <div className='form-container'>
            <Form onSubmit={handleSubmit}>
             <h2 className='text-center bg-dark text-white py-2'>Please Login</h2>
@@ -71,6 +72,7 @@ const Login = () => {
             <SocialLogin></SocialLogin>
            </div>
         </div>
+       </div>
     );
 };
 

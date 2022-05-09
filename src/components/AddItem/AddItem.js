@@ -25,7 +25,8 @@ const AddItem = () => {
         toast('Added Product')
     };
     return (
-        <div className='form-container mt-5'>
+        <div className='viwe-port'>
+            <div className='form-container mt-5'>
           <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
           <h2 className='text-center bg-dark text-white py-2'>Add Item</h2>
                 <input className='mb-3' placeholder='Item Name' type="text" {...register("itemName", { required: true})} />
@@ -37,6 +38,7 @@ const AddItem = () => {
                 <textarea className='mb-3' placeholder='Description' {...register("description",{ required: true})} />
                 <input className='bg-danger text-white' type="submit" value="Add Item" />
             </form>
+        </div>
         </div>
     );
 };

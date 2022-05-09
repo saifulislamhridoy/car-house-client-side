@@ -1,0 +1,9 @@
+.about-bg{
+    background-color: rgba(188, 183, 183, 0.866);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 8px 0;
+}
+.viwe-port{
+    height: 100vh;
+}

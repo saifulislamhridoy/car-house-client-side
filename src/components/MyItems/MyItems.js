@@ -9,7 +9,7 @@ const MyItems = () => {
        return <Spinner></Spinner>
    }
     return (
-        <div className='container'>
+        <div className='container pb-4'>
             <h2 className='text-center mt-3'>My Items</h2>
             <div className='row'>
             {
