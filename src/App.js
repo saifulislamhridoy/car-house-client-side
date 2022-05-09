@@ -11,6 +11,7 @@ import UpdateProduct from './components/UpdateProduct/UpdateProduct';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 import ManageItems from './components/ManageItems/ManageItems';
 import MyItems from './components/MyItems/MyItems';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
      <Route path='/additem' element={<RequireAuth><AddItem></AddItem></RequireAuth>}></Route>
      <Route path='/product/:productId' element={<RequireAuth><UpdateProduct></UpdateProduct></RequireAuth>}></Route>
    </Routes>
+   <Footer></Footer>
    <ToastContainer></ToastContainer>
     </div>
   );
