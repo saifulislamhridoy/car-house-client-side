@@ -10,7 +10,7 @@ const Products = () => {
    
     return (
         <div className='container'>
-            <h2 className='text-center mt-4'>Products</h2>
+            <h2 className='text-center mt-4 text-primary'>Products</h2>
             {
           products.length===0 && <Spinner></Spinner>
             }
