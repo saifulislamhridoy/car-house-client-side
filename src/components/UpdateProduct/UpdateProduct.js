@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import useProductDetail from '../../hooks/useProductDetail';
@@ -14,7 +14,7 @@ const UpdateProduct = () => {
         const stock = event.target.quantity.value
         if (stock) {
             const stockQuantity = parseInt(quantity) + parseInt(stock)
-            fetch(`http://localhost:5000/pd/${productId}`, {
+            fetch(`https://hidden-stream-82811.herokuapp.com/pd/${productId}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'
@@ -34,7 +34,7 @@ const UpdateProduct = () => {
     // Deliver
     const handleDeliver = (product) => {
         const newQuantity = parseInt(product.quantity) - 1
-        fetch(`http://localhost:5000/product/${productId}`, {
+        fetch(`https://hidden-stream-82811.herokuapp.com/product/${productId}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
