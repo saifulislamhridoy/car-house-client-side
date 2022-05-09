@@ -49,7 +49,7 @@ const UpdateProduct = () => {
             })
     }
     return (
-        <div>
+        <div className='viwe-port'>
             <div className="card shadow p-3 bg-body rounded mb-3 update-pd">
                 <div className="row g-0">
                     <div className="col-md-4">
